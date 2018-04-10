@@ -1,0 +1,196 @@
+/* Made by Soyoung Bae 3/29/18 */
+.nav_header {
+  font-family: Impact, sans-serif, arial;
+  width: 100%;
+  height: 15vh;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.nav_list_div {
+  float: right;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  width: 600px;
+  margin: auto;
+}
+
+.nav_list > a {
+  margin: 0 1%;
+  padding: 1%;
+  border-radius: 3px;
+  color: white;
+  font-family: sans-serif;
+  background-color: steelblue;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+.div_carousel {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.div_carousel > img {
+  background-image: cover;
+  width: 100vw;
+}
+
+.content_div {
+  height: 33vh;
+  position: relative;
+  padding: 10px 0;
+}
+
+footer {
+  height: 7vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer > p {
+  margin-top: 15px;
+  bottom: 0%;
+}
+
+.what_we_do,
+.feat_prod,
+.news_events,
+.partner,
+.feat_serv {
+  color: white;
+  padding: 0;
+}
+
+.what_we_do > h4,
+.feat_prod > h4,
+.news_events > h4,
+.partner > h4,
+.feat_serv > h4 {
+  border-radius: 3px;
+  background-color: steelblue; 
+  margin: 0 0 10px 5px;
+  padding: 1%;
+}
+
+.what_we_do > p,
+.feat_prod > p,
+.news_events > p,
+.partner > p,
+.feat_serv > p {
+  margin: 0 0 10px 20px;
+}
+
+/* Carousel CSS  */
+.carousel_box {
+  padding: 0px;
+  background-color: black;
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 55vh;
+  position: relative;
+  margin: 0em;
+  overflow: hidden;
+}
+
+.carousel_section {
+  height: 55vh;
+  padding: 0;
+}
+
+.content li {
+  font-size: 100px;
+  /* margin: 5%; */
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.active li {
+  position: absolute;
+  top: 100%;
+}
+
+.active li.current {
+  top: 30px;
+}
+
+.active .buttons {
+  background-color: black;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.carouselbox > button {
+  border: none;
+  display: none;
+  height: 55vh;
+}
+
+.active button.prev {
+  float: left;
+  background-color: black;
+  height: 55vh;
+  border-color: black;
+  padding: 0;
+}
+
+.active button.next {
+  float: right;
+  background-color: black;
+  height: 55vh;
+  border-color: black;
+  padding: 0;
+  right: -1%;
+}
+
+.off_screen {
+  position: absolute;
+  left: -2000px;
+}
+
+#my_new_Li {
+  display: none;
+}
+
+#my_new_Li.current {
+  display: inline-block;
+}
+
+.my_new_Img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  min-width: 1000px;
+  top: 0;
+  left: 0;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .carousel_section {
+    padding: 0;
+  }
+}
+
+/* IPAD PRO */
+@media screen and (min-width: 992px) {
+  .carousel_section {
+    padding: 0;
+  }
+}
