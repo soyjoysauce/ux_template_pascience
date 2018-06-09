@@ -12,7 +12,7 @@ body {
   margin: 20px;
   color: black;
   font-family: "Francois One", Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom right, #1185dd, #0e408efa);
+  background: linear-gradient(to bottom right, #005192, #0e408e75);
   background-color: black;
 }
 
@@ -113,7 +113,7 @@ a:hover {
 .news_events,
 .partner {
   background: linear-gradient(to bottom right, #053a76cc, #0f144ba8);
-  padding: 0;
+  padding: 5px;
   color: white;
 }
 
@@ -259,7 +259,7 @@ td:hover {
   float: right;
   padding: 0;
   position: relative;
-  top: -4%;
+  /* top: -4%; */
 }
 
 .off_screen {
@@ -359,8 +359,7 @@ img.my_new_Img {
     background-repeat: no-repeat;
   }
   .active li.current {
-    left: 9%;
-    top: 0;
+    left: 12%;
   }
 }
 
@@ -369,8 +368,8 @@ img.my_new_Img {
   img.my_new_Img {
     display: inline-block;
     min-height: 50vh;
-    width: 100%;
-    max-width: 1500px;
+    min-width: 1300px;
+    max-width: 1400px;
     background-size: auto;
     background-repeat: no-repeat;
   }
