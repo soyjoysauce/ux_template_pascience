@@ -77,17 +77,17 @@
             ◀
         </button>
         <!-- <div class="w3-rest"> -->
-        <ul id="new_carousel" class="w3-col m10 l10 content">
-        </ul>
+        <div id="new_carousel" class="w3-col m10 l10 content">
+        </div>
         <!-- </div> -->
         <button class="w3-col m1 l1 next">
             ▶
         </button>
     </section>
     <section class="content_div w3-rest">
-        <div class="w3-card-4 what_we_do w3-third w3-cell w3-margin-bottom">
-            <h4>What We Do</h4>
-            <div class="what_we_do_scroll">
+        <div class="w3-card-4 what_we_do w3-col w3-cell w3-margin-bottom">
+            <h3>What We Do</h3>
+            <div class="what_we_do_scroll w3-third">
                 <p>Pure Assay distributes an array of ingredients including nutritional supplements, vitamins, amino acids,
                     minerals and other specialties.Our products play a vital role in the making of finished products and
                     our customers span several industries from food to animal nutrition to cosmetic.
@@ -97,33 +97,66 @@
             </div>
             <img class="w3-margin-left icon-img" src="img/hands_heart.svg" />
         </div>
-        <div class="feat_prod_col w3-third w3-cell">
+        <div class="feat_prod_col w3-col w3-cell">
             <div class="w3-card-4 feat_prod w3-margin-bottom">
-                <h4>Featured Products</h4>
-                <p>L-Arginine AKG 2:1 - the athlete's choice for boosting short term nitric oxide level, increase strength and
-                    improve stamina.
-                </p>
+                <h3>Featured Products</h3>
+                <div class="card">
+                    <div class="w3-display-container">
+                        <img class="w3-display-middle icon-img" src="img/Arginine.png" />
+                    </div>
+                    <div class="container">
+                        <h4>
+                            <b>L-Arginine AKG 2:1</b>
+                        </h4>
+                        <p> The athlete's choice for boosting short term nitric oxide level, increase strength and improve
+                            stamina. How does it work? L-arginine is converted in the body into a chemical called nitric
+                            oxide. Nitric oxide causes blood vessels to open wider for improved blood flow. L-arginine also
+                            stimulates the release of growth hormone, insulin, and other substances in the body.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w3-display-container">
+                        <img class="w3-display-middle icon-img" src="img/creatin.png" />
+                    </div>
+                    <div class="container">
+                        <h4>
+                            <b>Creatin Monohydrate</b>
+                        </h4>
+                        <p> This muscle-building, power-enhancing supplement has an extremely high safety profile and a plethora
+                            of evidence to support its efficacy. Creatine supplementation works by increasing the availability
+                            of creatine and phosphocreatine (PCr) within the muscle, helping to maintain energy during high-intensity
+                            exercise such as weightlifting.
+                        </p>
+                    </div>
+                </div>
                 <p>
                     Also available: > MSM 40 Mesh and 80 Mesh
                 </p>
             </div>
             <div class="w3-card-4 feat_prod w3-margin-bottom">
-                <h4>Featured Services</h4>
+                <h3>Featured Services</h3>
                 <ul class="w4-cell">
-                    <li class="w3-half">Sourcing</li><span>Lorem ipsum dolor sit amet, rum.</span></br>
-                    <li class="w3-half">Manufacture Audit</li><span>sdsdsd</span></br>
-                    <li class="w3-half">Request a Sample</li><span>sdsdsd</span></br>
-                    <li class="w3-half">Request a Quote</li><span>sdsdsd</span></br>
+                    <li class="w3-half">Sourcing</li>
+                    <span>Lorem ipsum dolor sit amet, rum.</span>
+                    </br>
+                    <li class="w3-half">Manufacture Audit</li>
+                    <span>sdsdsd</span>
+                    </br>
+                    <li class="w3-half">Request a Sample</li>
+                    <span>sdsdsd</span>
+                    </br>
+                    <li class="w3-half">Request a Quote</li>
+                    <span>sdsdsd</span>
+                    </br>
                 </ul>
             </div>
         </div>
         <!-- id='news_drop_down' -->
-        <div class="w3-card-4 w3-margin-bottom news_events w3-third w3-cell">
-            <h4>News and Events</h4>
+        <div class="w3-card-4 w3-margin-bottom news_events w3-cell w3-half">
+            <h3>News and Events</h3>
             <div class="news_scroll">
                 <div class="w3-row w3-margin-bottom w3-margin">
-                    <div class="health_img w3-half">
-                    </div>
                     <table class="w3-table w3-half">
                         <tr>
                             <th>Event Name</th>
@@ -137,6 +170,8 @@
                         </tr>
 
                     </table>
+                    <div class="health_img w3-half">
+                    </div>
                     <div class="walnut_map w3-half">
                     </div>
                 </div>
@@ -163,14 +198,15 @@
             </div>
         </div>
         </div>
-        <div class="w3-card-4 partner w3-third">
-            <h4>Become a Partner</h4>
+        <div class="w3-card-4 partner w3-half">
+            <h3>Become a Partner</h3>
             <p>Expand your reach and tap into a network of customers to deliver your products and services to. Join the Pure
                 Assay experience. </p>
+            <div id="googleMap"></div>
+
         </div>
-        <div class="w3-card-4 partner w3-third">
-            <div id="googleMap" style="width:100%;height:400px;"></div>
-        </div>
+        <!-- <div class="w3-card-4 partner w3-third">
+        </div> -->
         <section class="footer w3-rest">
             <p>Privacy Policy | Term of Use © Copyright 2010 Pure Assay Ingredients. All Rights Reserved.</p>
             <i class="fab fa-facebook-square"></i>
