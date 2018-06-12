@@ -1,4 +1,5 @@
 /* Made by Soyoung Bae 3/29/18 */
+
 .nav_header {
   position: relative;
   letter-spacing: 3px;
@@ -11,9 +12,10 @@
 body {
   margin: 20px;
   color: black;
-  font-family: "Francois One", Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom right, #1185dd, #0e408efa);
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(to bottom right, #005192, #0e408e75);
   background-color: black;
+  font-size: 12px;
 }
 
 .header_img {
@@ -68,7 +70,7 @@ body {
   margin: auto;
 }
 
-.nav_list > a {
+.nav_list>a {
   margin: 0 1%;
   padding: 1%;
   border-radius: 3px;
@@ -86,7 +88,7 @@ a:hover {
   color: black;
 }
 
-.div_carousel > img {
+.div_carousel>img {
   background-image: cover;
   width: 100vw;
 }
@@ -102,7 +104,7 @@ a:hover {
   text-align: center;
 }
 
-.footer > p {
+.footer>p {
   margin-top: 15px;
   bottom: 0%;
   letter-spacing: 1px;
@@ -110,54 +112,63 @@ a:hover {
 
 .what_we_do,
 .feat_prod,
+.services,
 .news_events,
 .partner {
-  background: linear-gradient(to bottom right, #053a76cc, #0f144ba8);
-  padding: 0;
+  /* background: linear-gradient(to bottom right, #00000059, #0d439600); */
+  padding: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: table-cell;
+  /* Make the container element behave like a table */
+  width: 100%;
+  /* Set full-width to expand the whole page */
+}
+
+.what_we_do,
+.news_events,
+.services,
+.partner {
   color: white;
 }
 
-.what_we_do > h4,
-.feat_prod > h4,
-.news_events > h4,
-.partner > h4 {
+.feat_prod>h3,
+.feat_prod>p {
+  color: white;
+}
+
+.what_we_do>h3,
+.feat_prod>h3,
+.news_events>h3,
+.partner>h3 {
   border-radius: 2px;
-  background: linear-gradient(to bottom right, #2196f3, #0d4396a1);
-  margin: 0 0 10px 0px;
+  /* background: linear-gradient(to bottom right, #2196f3, #0d4396a1); */
+  margin: 0 0 5px 0px;
   padding: 1%;
   letter-spacing: 1px;
   font-family: "Francois One", Arial, Helvetica, sans-serif;
 }
 
-.what_we_do_scroll > p,
-.feat_prod > p,
-.news_events > p,
-.partner > p {
+.what_we_do_scroll>p,
+.feat_prod>p,
+.news_events>p,
+.partner>p {
   margin: 0 10px 10px 10px;
   text-align: justify;
-  letter-spacing: 2px;
+  text-justify: inter-word;
+  letter-spacing: 1px;
   padding-bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.health_img {
-  background-image: url(img/health_items.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 200px;
-  display: inline-block;
-}
-
-.news_scroll {
-  height: 150px;
-  overflow: auto;
-  overscroll-behavior-y: contain;
 }
 
 .what_we_do {
   height: 350px;
   overflow: auto;
   overscroll-behavior-y: contain;
+  position: relative;
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
+  clip-path: polygon(0% 0%, 74% -45%, 41% 50%, 24% 100%, 0% 100%);
+  color: black;
 }
 
 .feat_prod_col {
@@ -184,6 +195,7 @@ td:hover {
   /* color: white !important; */
   background-color: rgba(119, 188, 243, 0.34) !important;
 }
+
 .walnut_map {
   background-image: url(img/walnut_map.png);
   background-size: cover;
@@ -202,17 +214,67 @@ td:hover {
   background-color: transparent;
 }
 
+#googleMap {
+  width: 100%;
+  min-height: 300px;
+  max-height: 400px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* margin: 0px, 1%, 0px, 1%; */
+  width: 49%;
+  /* display: inline-block; */
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad), url(img/exercise.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table-cell;
+  /* Make elements inside the container behave like table cells */
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* margin: 0px, 5px, 0px, 5px; */
+  width: 49%;
+  /* display: inline-block; */
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad), url(img/exercise2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table-cell;
+  /* Make elements inside the container behave like table cells */
+}
+
+.card:hover {
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card1:hover {
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
 /* Carousel CSS  */
+
 .carousel_box {
   padding: 0px;
   font-family: helvetica, sans-serif;
   font-size: 14px;
-  width: 100%;
+  width: 91%;
+  /* left: 4%; */
   height: 50vh;
   position: relative;
   margin: 0em;
   overflow: hidden;
 }
+
+#new_carousel {}
 
 .carousel_section {
   height: 50vh;
@@ -232,7 +294,7 @@ td:hover {
 .active li {
   position: absolute;
   top: 100%;
-  left: 25%;
+  /* left: 25%; */
 }
 
 .active li.current {
@@ -240,7 +302,7 @@ td:hover {
   top: 0;
 }
 
-.carousel_section > button {
+.carousel_section>button {
   border: none;
   display: inline-block;
   height: 50vh;
@@ -258,8 +320,9 @@ td:hover {
 .active button.next {
   float: right;
   padding: 0;
-  position: relative;
-  top: -4%;
+  position: absolute;
+  /* top: -4%; */
+  right: -8%;
 }
 
 .off_screen {
@@ -267,16 +330,16 @@ td:hover {
   left: -2000px;
 }
 
-.my_new_Li {
+.my_new_Div {
   display: none;
 }
 
-.my_new_Li.current {
+.my_new_Div.current {
   display: inline-block;
 }
 
-.my_new_Li,
-.my_new_Li.current {
+.my_new_Div,
+.my_new_Div.current {
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -289,9 +352,11 @@ img.my_new_Img {
   background-size: auto;
   background-repeat: no-repeat;
 }
+
 /* END OF Carousel CSS  */
 
 /* MOBILE */
+
 @media screen and (max-width: 767px) {
   .carousel_section {
     padding: 0;
@@ -303,9 +368,18 @@ img.my_new_Img {
   body {
     margin: 0px;
   }
+  .news_scroll {
+    height: 150px;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+  }
+  .health_img {
+    min-height: 200px;
+  }
 }
 
 /* IPAD */
+
 @media screen and (min-width: 768px) {
   .nav_list_div {
     right: -5%;
@@ -327,13 +401,22 @@ img.my_new_Img {
     left: 9%;
     top: 0;
   }
-  
+  .news_scroll {
+    height: 360px;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+  }
+  .health_img {
+    min-height: 200px;
+  }
 }
 
 /* IPAD PRO */
+
 @media screen and (min-width: 1024px) {
   .carousel_section {
     padding: 0;
+    margin: 0px;
   }
   body {
     margin: 20px;
@@ -360,18 +443,31 @@ img.my_new_Img {
   }
   .active li.current {
     left: 9%;
-    top: 0;
+  }
+  .news_scroll {
+    height: 360px;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+  }
+  .health_img {
+    min-height: 200px;
   }
 }
 
 /* Desktop */
+
 @media screen and (min-width: 1025px) {
+  .carousel_section {
+    padding: 0;
+    margin: 0px;
+  }
   img.my_new_Img {
     display: inline-block;
     min-height: 50vh;
-    width: 100%;
-    max-width: 1500px;
-    background-size: auto;
+    min-width: 84vw;
+    max-width: 1400px;
+    background-size: cover;
+    text-align: center;
     background-repeat: no-repeat;
   }
   .nav_list_div {
@@ -387,19 +483,29 @@ img.my_new_Img {
   .walnut_map {
     min-height: 100px;
   }
-  
+  .news_scroll {
+    height: 360px;
+    overflow: auto;
+    overscroll-behavior-y: contain;
+  }
+  .health_img {
+    min-height: 200px;
+  }
+}
+
+.health_img {
+  background-image: url(img/health_items.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 /* ANIMATION */
+
 @keyframes nav_list_slide {
-  0% {
-  }
-  25% {
-  }
-  50% {
-  }
-  75% {
-  }
-  100% {
-  }
+  0% {}
+  25% {}
+  50% {}
+  75% {}
+  100% {}
 }
