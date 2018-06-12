@@ -70,7 +70,7 @@ body {
   margin: auto;
 }
 
-.nav_list > a {
+.nav_list>a {
   margin: 0 1%;
   padding: 1%;
   border-radius: 3px;
@@ -88,7 +88,7 @@ a:hover {
   color: black;
 }
 
-.div_carousel > img {
+.div_carousel>img {
   background-image: cover;
   width: 100vw;
 }
@@ -104,7 +104,7 @@ a:hover {
   text-align: center;
 }
 
-.footer > p {
+.footer>p {
   margin-top: 15px;
   bottom: 0%;
   letter-spacing: 1px;
@@ -112,29 +112,35 @@ a:hover {
 
 .what_we_do,
 .feat_prod,
+.services,
 .news_events,
 .partner {
   /* background: linear-gradient(to bottom right, #00000059, #0d439600); */
   padding: 5px;
   font-size: 15px;
   letter-spacing: 1px;
+  display: table-cell;
+  /* Make the container element behave like a table */
+  width: 100%;
+  /* Set full-width to expand the whole page */
 }
 
 .what_we_do,
 .news_events,
+.services,
 .partner {
   color: white;
 }
 
-.feat_prod > h3,
-.feat_prod > p {
+.feat_prod>h3,
+.feat_prod>p {
   color: white;
 }
 
-.what_we_do > h3,
-.feat_prod > h3,
-.news_events > h3,
-.partner > h3 {
+.what_we_do>h3,
+.feat_prod>h3,
+.news_events>h3,
+.partner>h3 {
   border-radius: 2px;
   /* background: linear-gradient(to bottom right, #2196f3, #0d4396a1); */
   margin: 0 0 5px 0px;
@@ -143,10 +149,10 @@ a:hover {
   font-family: "Francois One", Arial, Helvetica, sans-serif;
 }
 
-.what_we_do_scroll > p,
-.feat_prod > p,
-.news_events > p,
-.partner > p {
+.what_we_do_scroll>p,
+.feat_prod>p,
+.news_events>p,
+.partner>p {
   margin: 0 10px 10px 10px;
   text-align: justify;
   text-justify: inter-word;
@@ -217,13 +223,36 @@ td:hover {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  margin: 0px, 5px, 0px, 5px;
-  width: 48%;
-  display: inline-block;
-  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
+  /* margin: 0px, 1%, 0px, 1%; */
+  width: 49%;
+  /* display: inline-block; */
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad), url(img/exercise.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table-cell;
+  /* Make elements inside the container behave like table cells */
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* margin: 0px, 5px, 0px, 5px; */
+  width: 49%;
+  /* display: inline-block; */
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad), url(img/exercise2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table-cell;
+  /* Make elements inside the container behave like table cells */
 }
 
 .card:hover {
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card1:hover {
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -245,8 +274,7 @@ td:hover {
   overflow: hidden;
 }
 
-#new_carousel {
-}
+#new_carousel {}
 
 .carousel_section {
   height: 50vh;
@@ -274,7 +302,7 @@ td:hover {
   top: 0;
 }
 
-.carousel_section > button {
+.carousel_section>button {
   border: none;
   display: inline-block;
   height: 50vh;
@@ -475,14 +503,9 @@ img.my_new_Img {
 /* ANIMATION */
 
 @keyframes nav_list_slide {
-  0% {
-  }
-  25% {
-  }
-  50% {
-  }
-  75% {
-  }
-  100% {
-  }
+  0% {}
+  25% {}
+  50% {}
+  75% {}
+  100% {}
 }
