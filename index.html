@@ -8,7 +8,7 @@
     <!-- W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Francois+One" rel="stylesheet">
-     <!-- CCS -->
+    <!-- CCS -->
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <link rel="stylesheet" type="text/css" href="style-2.css">
     <!-- JQuery -->
@@ -66,7 +66,7 @@
             </div>
         </div>
         <a href="#" class="live_chat w3-hide-small w3-bar-item w3-button">
-            <img class="icon-img" src="img/live_chat.png" />
+            <img class="chat_img" src="img/live_chat.png" />
             <p>Click here for Live Chat Assistance</p>
         </a>
     </header>
@@ -85,23 +85,25 @@
         <div class="w3-card-4 what_we_do w3-col w3-cell w3-margin-bottom">
             <h3>What We Do</h3>
             <div class="what_we_do_scroll w3-third">
-                <p>Pure Assay distributes an array of ingredients including nutritional supplements, vitamins, amino acids,
-                    minerals and other specialties.Our products play a vital role in the making of finished products and
-                    our customers span several industries from food to animal nutrition to cosmetic.
-                    <br/>
-                    <br/>Explore the Pure Assay experience.
+                <p>PAScience distributes an array of ingredients including nutritional supplements, vitamins, amino acids, minerals
+                    and other specialties.Our products play a vital role in the making of finished products and our customers
+                    span several industries from food to animal nutrition to cosmetic.
                 </p>
+                <p> Sign up for our daily news letter and be in the loop for coupons/discounts </p>
             </div>
-            <img class="w3-margin-left icon-img" src="img/hands_heart.svg" />
+            <img class="heart_img" src="img/hands_heart.svg" />
+        </div>
+        <div class="what_we_do_img">
+            <!-- <img src="img/science_stock.png"> -->
         </div>
         <div class="feat_prod_col w3-col w3-cell">
             <div class="w3-card-4 feat_prod w3-margin-bottom">
                 <h3>Featured Products</h3>
                 <div class="card1">
                     <div class="w3-display-container">
-                        <img class="w3-display-middle icon-img" src="img/Arginine.png" />
+                        <img class="icon-img0" src="img/Arginine.png" />
                     </div>
-                    <div class="container w3-row w3-half">
+                    <div class="card_container w3-row w3-half">
                         <h4>
                             <b>L-Arginine AKG 2:1</b>
                         </h4>
@@ -114,9 +116,9 @@
                 </div>
                 <div class="card">
                     <div class="w3-display-container">
-                        <img class="w3-display-middle icon-img" src="img/creatin.png" />
+                        <img class="icon-img1" src="img/creatin.png" />
                     </div>
-                    <div class="container w3-row w3-half">
+                    <div class="card_container w3-row w3-half">
                         <h4>
                             <b>Creatin Monohydrate</b>
                         </h4>
@@ -136,41 +138,95 @@
                 <div class="w3-col service_col">
                     <div class="w3-quarter service_cell">
                         <h4 class="w3-col">Sourcing</h4>
-                            <div class="service_img">
-                                <img src="img/sourcing_logo.png" />
-                            </div>
-                            <p>Sourced from the very best.</p>
-                            </br>
+                        <div class="service_img">
+                            <img src="img/sourcing_logo.png" />
+                        </div>
+                        <p>Sourced from the very best.</p>
+                        </br>
                     </div>
                     <div class="w3-quarter service_cell">
                         <h4 class="w3-col">Manufacture Audit</h4>
-                            <div class="service_img">
-                                    <img src="img/manufact_logo.png" />
-                                </div>
-                            <p>Plan your next health.</p>
-                            </br>
+                        <div class="service_img">
+                            <img src="img/manufact_logo.png" />
+                        </div>
+                        <p>Plan your next health.</p>
+                        </br>
                     </div>
                     <div class="w3-quarter service_cell">
                         <h4 class="w3-col">Request a Sample</h4>
-                            <div class="service_img">
-                                    <img src="img/sample_logo.png" />
-                                </div>
-                            <p>Best things in life are free</p>
-                            </br>
+                        <div class="service_img">
+                            <img src="img/sample_logo.png" />
+                        </div>
+                        <p>Best things in life are free</p>
+                        </br>
                     </div>
                     <div class="w3-quarter service_cell">
                         <h4 class="w3-col">Request a Quote</h4>
-                            <div class="service_img">
-                                    <img src="img/quote_logo.png" />
-                                </div>
-                            <p>Competitive Price! Guaranteed</p>
-                            </br>
+                        <div class="service_img">
+                            <img src="img/quote_logo.png" />
+                        </div>
+                        <p>Competitive Price! Guaranteed</p>
+                        </br>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- id='news_drop_down' -->
-        <div class="w3-card-4 w3-margin-bottom news_events w3-cell w3-col">
+        <!-- email forms here -->
+        <div class="w3-card-4 email_form_col w3-col">
+            <h3>Sign up for our Newsletter</h3>
+            <h5 class="">Daily Promotion and Discount</h5>
+            <!--Contact Form-->
+            <div class="contact_form_div  w3-card-4">
+                <form class="contact_form">
+                    <div class="w3-col">
+                        <div class="w3-col form_label">
+                            <label class="">Name:</label>
+                            <input name="Name" type="text" id="name" class="form-control name" placeholder="Full name" required/>
+                        </div>
+                        <div class="w3-col form_label">
+                            <span class="">Email:</span>
+                            <input name="Email" type="email" id="email" class="form-control email" placeholder="youremail@email.com" required/>
+                        </div>
+                        <div class="w3-col form_label">
+                            <span class="">Message:</span>
+                            <textarea name="Message" id="message" class="" placeholder="Message us" aria-describedby="basic-addon1" required></textarea>
+                        </div>
+                    </div>
+                    <!--Button Submit-->
+                    <button type="button" class="submit_button">Submit</button>
+                    <h4 class="responseText"></h4>
+                </form>
+            </div>
+        </div>
+        <div class="w3-card-4 partner w3-half">
+            <h3>Contact Us</h3>
+            <p>We are located in Irvine, CA.</p>
+            <p> Phone: (000)000-0000 </p>
+            <p> Email: pascience@email.com </p>
+            <div id="googleMap"></div>
+        </div>
+        <section class="footer w3-rest">
+            <p>Privacy Policy | Term of Use © Copyright 2010 PAScience All Rights Reserved.</p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-google"></i>
+        </section>
+    </section>
+</body>
+<script>
+    function myMap() {
+        var mapProp = {
+            center: new google.maps.LatLng(33.681584, -117.820286),
+            zoom: 10,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCwfkn-8Y3s7RVTIpvfZyIrBl2N9t-dZs&callback=myMap"></script>
+
+</html>
+
+<!-- <div class="w3-card-4 w3-margin-bottom news_events w3-cell w3-col">
             <h3>News and Events</h3>
             <div class="news_scroll">
                 <div class="w3-row w3-margin-bottom w3-margin">
@@ -193,7 +249,8 @@
                     </div>
                 </div>
                 <div class="w3-row w3-margin-bottom w3-margin">
-                    <div class="health_img w3-half">
+                    <div class="">
+                        <img src="img/health_items.png">
                     </div>
                     <table class="w3-table w3-half">
                         <tr>
@@ -213,34 +270,4 @@
                 </div>
 
             </div>
-        </div>
-        </div>
-        <div class="w3-card-4 partner w3-half">
-            <h3>Become a Partner</h3>
-            <p>Expand your reach and tap into a network of customers to deliver your products and services to. Join the Pure
-                Assay experience. </p>
-            <div id="googleMap"></div>
-
-        </div>
-        <!-- <div class="w3-card-4 partner w3-third">
         </div> -->
-        <section class="footer w3-rest">
-            <p>Privacy Policy | Term of Use © Copyright 2010 PAScience All Rights Reserved.</p>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-google"></i>
-        </section>
-    </section>
-</body>
-<script>
-    function myMap() {
-        var mapProp = {
-            center: new google.maps.LatLng(33.681584, -117.820286),
-            zoom: 10,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCwfkn-8Y3s7RVTIpvfZyIrBl2N9t-dZs&callback=myMap"></script>
-
-</html>   
