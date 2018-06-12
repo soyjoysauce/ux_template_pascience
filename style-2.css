@@ -13,7 +13,7 @@ body {
   margin: 20px;
   color: black;
   font-family: Helvetica, sans-serif;
-  background: linear-gradient(to bottom right, #005192, #0e408e75);
+  background: linear-gradient(to bottom right, #2196f3e0, #0e408e0a);
   background-color: black;
   font-size: 12px;
 }
@@ -79,8 +79,22 @@ body {
   letter-spacing: 1px;
 }
 
-.icon-img {
+.heart_img,
+.chat_img {
+  width: 75px;
   height: 75px;
+}
+
+.icon-img0 {
+  position: absolute;
+  height: 250px;
+  right: 5%;
+}
+
+.icon-img1 {
+  position: absolute;
+  height: 250px;
+  right: 5%;
 }
 
 a:hover {
@@ -120,9 +134,7 @@ a:hover {
   font-size: 15px;
   letter-spacing: 1px;
   display: table-cell;
-  /* Make the container element behave like a table */
   width: 100%;
-  /* Set full-width to expand the whole page */
 }
 
 .what_we_do,
@@ -146,7 +158,15 @@ a:hover {
   margin: 0 0 5px 0px;
   padding: 1%;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 4px #000000;
   font-family: "Francois One", Arial, Helvetica, sans-serif;
+}
+
+.feat_prod>h3,
+.news_events>h3,
+.services>h3,
+.partner>h3 {
+  text-align: center;
 }
 
 .what_we_do_scroll>p,
@@ -165,19 +185,31 @@ a:hover {
 .what_we_do {
   height: 350px;
   overflow: auto;
-  overscroll-behavior-y: contain;
+  /* overscroll-behavior-y: contain; */
   position: relative;
   background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad);
   clip-path: polygon(0% 0%, 74% -45%, 41% 50%, 24% 100%, 0% 100%);
+}
+
+.what_we_do>h3 {
   color: black;
+  text-shadow: 2px 2px #00000018;
+}
+
+.what_we_do_scroll>p {
+  color: black;
+  margin: 0 0 0 4%;
 }
 
 .feat_prod_col {
   min-height: 316px;
 }
 
-.partner {
-  min-height: 114px;
+.partner,
+.partner>h3,
+.partner>p {
+  /* min-height: 114px; */
+  text-align: center;
 }
 
 th {
@@ -193,7 +225,6 @@ td:hover {
 }
 
 .w3-button:hover {
-  /* color: white !important; */
   background-color: rgba(119, 188, 243, 0.34) !important;
 }
 
@@ -201,7 +232,7 @@ td:hover {
   background-image: url(img/walnut_map.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 130px;
+  height: 230px;
   display: inline-block;
 }
 
@@ -229,7 +260,6 @@ td:hover {
   background-repeat: no-repeat;
   background-size: cover;
   display: table-cell;
-  /* Make elements inside the container behave like table cells */
 }
 
 .card1 {
@@ -240,7 +270,6 @@ td:hover {
   background-repeat: no-repeat;
   background-size: cover;
   display: table-cell;
-  /* Make elements inside the container behave like table cells */
 }
 
 .card:hover {
@@ -253,23 +282,103 @@ td:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.container {
+.card_container {
   padding: 2px 16px;
+  margin: 0 0 0 4%;
 }
 
-.service_col{
+.service_col {
   display: table-cell;
   width: 100%;
-  color:black;
+  color: black;
 }
 
-.service_cell{
+.service_cell {
+  font-family: "Francois One", Arial, Helvetica, sans-serif;
   text-align: center;
   display: table-cell;
-  width: 25%;
-  background-image: linear-gradient(to right bottom,#fffcfcd0, #8582829c)
+  width: 24%;
+  background-image: linear-gradient(to right bottom, #fffcfcd0, #8582829c);
+  border-radius: 5px;
+  margin: 0.5% .5%;
 }
 
+.service_cell>h4 {
+  font-family: "Francois One", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.service_cell:hover {
+  background-image: linear-gradient(to right bottom, #fffcfcd0, #8582829c)
+}
+
+.what_we_do_img {
+  position: absolute;
+  right: -24%;
+  opacity: 0.7;
+  width: 1170px;
+  background-size: cover;
+  height: 350px;
+  background-image: url(/img/science_stock.png);
+  /* background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad); */
+  /* clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 0%); */
+}
+
+.what_we_do_img>img {
+  background-size: cover;
+  width: 1170px;
+}
+
+.email_form_col,
+.email_form_col>h3,
+h5 {
+  font-family: "Francois One", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+.email_form_col {
+  color: black;
+  text-shadow: none;
+  margin: 0 1%;
+}
+
+.contact_form_div {
+  background-image: linear-gradient(to right bottom, #fffcfc, #fffbfbad), url(img/health_items.png);
+  display: inline-block;
+  margin-bottom: 2%;
+  width: 50%;
+  height: 300px;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.contact_form {
+  height: 10vh;
+}
+
+.form_label {
+  padding: 1%;
+  font-size: 1.3em;
+}
+
+.form_label>input,
+textarea {
+  width: 90%;
+}
+
+.submit_button {
+  width: 50%;
+  height: 35%;
+  background: linear-gradient(to bottom right, #28a0ff, #2f6bc7);
+  color: white;
+  font-size: 1.5em;
+  border-radius: 15px;
+}
 
 /* Carousel CSS  */
 
